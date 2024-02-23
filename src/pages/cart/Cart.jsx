@@ -71,6 +71,7 @@ function Cart() {
     };
     // console.log(addressInfo);
 
+
     var options = {
       key: "rzp_test_ozcV9lm4uZCHoH",
       key_secret: "DlmUYaJU62Dz8ElsRmslaL75",
@@ -114,8 +115,8 @@ function Cart() {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <Layout>
