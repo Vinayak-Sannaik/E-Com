@@ -63,7 +63,7 @@ function App() {
             }
           />
           <Route path="/productinfo/:id" element={<ProductInfo />} />
-          <Route path="/*" element={<NoPage />} />
+          <Route path="/*" element={<Home/>} />
         </Routes>
         <ToastContainer />
       </Router>
