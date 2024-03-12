@@ -41,7 +41,7 @@ function App() {
             element={
               <ProtectedRouteForAdmin>
                 <Dashboard />
-              </ProtectedRouteForAdmin>
+             </ProtectedRouteForAdmin>
             }
           />
           <Route path="/login" element={<Login />} />
@@ -87,7 +87,7 @@ export const ProtectedRouteForUser = ({ children }) => {
 export const ProtectedRouteForAdmin = ({ children }) => {
   const admin = JSON.parse(localStorage.getItem("user"));
 
-  if (admin.user.email === "vinayaksannaik@gmail.com") {
+  if (admin.user.email === "testing@gmail.com") {
     return children;
   } else {
     return <Navigate to={"/login"} />;
