@@ -33,7 +33,7 @@ function ProductInfo() {
 
     useEffect(() => {
         getProductData()
-    }, [])
+    },[])
 
 
 

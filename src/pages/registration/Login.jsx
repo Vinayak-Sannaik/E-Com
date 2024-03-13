@@ -19,6 +19,7 @@ function Login() {
     setLoading(true);
     try {
       const result = await signInWithEmailAndPassword(auth, email, password)
+    
       toast.success("Login successful..", {
         position: "top-right",
         autoClose: 2000,
@@ -30,6 +31,8 @@ function Login() {
         theme: "colored",
       })
       localStorage.setItem('user', JSON.stringify(result))
+
+      // console.log("LS used")
       navigate('/')
       setLoading(false)
 
