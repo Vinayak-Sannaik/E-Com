@@ -101,6 +101,12 @@ function Signup() {
               Login
             </Link>
           </h2>
+          <h2 className="text-gray">
+            Wants to check without signup{" "}
+            <Link className=" text-red-300 font-bold" to={"/"}>
+              Home
+            </Link>
+          </h2>
         </div>
       </div>
     </div>

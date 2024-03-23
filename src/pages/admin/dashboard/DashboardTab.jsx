@@ -10,7 +10,7 @@ function DashboardTab() {
   const context = useContext(MyContext);
   const { mode, product, edithandle, deleteProduct, order, user } = context;
 
-  console.log("user", user.name);
+  // console.log("user", user.name);
 
   let [isOpen, setIsOpen] = useState(false);
 
